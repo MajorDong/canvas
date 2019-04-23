@@ -16,6 +16,7 @@ ul, ol {
 }    
 body {
     margin: 0px;
+    overflow: hidden;
 }
 .actions {
     position: fixed;
