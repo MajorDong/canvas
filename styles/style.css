@@ -17,5 +17,5 @@ body {
     display: inline-block;
 }
 .action.x > #eraser {
-    display:none;
+    display: none;
 }
