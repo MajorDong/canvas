@@ -47,6 +47,13 @@ thick.onclick = function() {
     lineWidth = 10
 }
 
+clear.onclick = function() {
+    context.clearRect(0, 0, yyy.width, yyy.height)
+}
+
+download.onclick = function() {
+    yyy
+}
 //
 function autoSetCanvasSize(canvas) {
     SetCanvasSize()
