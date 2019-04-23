@@ -1,5 +1,6 @@
 var yyy = document.getElementById('xxx')
 var context = yyy.getContext('2d')
+var lineWidth = 5
 
 autoSetCanvasSize(yyy)
 
@@ -38,6 +39,14 @@ blue.onclick = function() {
     green.classList.remove('active')
     blue.classList.add('active')
 }
+
+thin.onclick = function() {
+    lineWidth = 5
+}
+thick.onclick = function() {
+    lineWidth = 10
+}
+
 //
 function autoSetCanvasSize(canvas) {
     SetCanvasSize()
@@ -64,7 +73,7 @@ function drawCircle(x, y, radius) {
 function drawLine(x1, x2, y1, y2) {
     context.beginPath()
     context.moveTo(x1, x2)
-    context.lineWidth = 5
+    context.lineWidth = lineWidth
     context.lineTo(y1, y2)
     context.stroke()
     context.closePath()
