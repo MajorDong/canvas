@@ -52,7 +52,13 @@ clear.onclick = function() {
 }
 
 download.onclick = function() {
-    yyy
+    var url = yyy.toDataURL("image/png")
+    var a = document.createElement('a')
+    document.body.appendChild(a)
+    a.href = url 
+    a.download = '我的画儿'
+    a.target = '_blank'
+    a.click()
 }
 //
 function autoSetCanvasSize(canvas) {
